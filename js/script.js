@@ -1,26 +1,19 @@
 alert('plugged');
 
-var x;
-var y;
-var i;
-var r = 1;
+function pow(a, b) {
+  var c = 1;
 
-//do {
-x = prompt('Введите число', 1);
-
-
-y = prompt('Введите степень, в которую нужно это число возвести', 1);
-
-var a = pow(x, y);
-
-function pow(x, y) {
-  for (i = 1; i <= y; i++) {
-      result = result * x;
+  for (var i = 1; i <= b; i++) {
+    c = c * a;
   }
+
+  return c;
 }
 
-//} while (i = isNan(x));
+var x = prompt('Введите число', 1);
 
-console.log('x = ', x)
-console.log('y = ', y);
-console.log(a);
+do {
+var y = prompt('Введите степень, в которую нужно это число возвести', 1);
+} while (y < 0);
+
+alert( x + ' в степени ' + y + ' = ' + pow(x, y) );
