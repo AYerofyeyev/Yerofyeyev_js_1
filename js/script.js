@@ -31,7 +31,7 @@ var userName = prompt("Введите своё имя", "");
 
 console.log(userName);
 
-checking: for (var k in nameList) {
+checking: for (var k = 0; k < 5; k++) {
   if (nameList[k] == userName) {
     check = true;
     break checking;
@@ -42,7 +42,7 @@ checking: for (var k in nameList) {
 
 console.log(check);
 
-if (check == true) {
+if (check) {
   alert(userName + ", Вы успешно вошли");
 } else {
   alert("Вас нет в списке");
