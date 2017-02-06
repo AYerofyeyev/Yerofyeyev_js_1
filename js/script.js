@@ -1,4 +1,6 @@
-alert("plugged");
+// alert("plugged");
+
+// ДЗ-1. Возведение числа в степень.
 
 function pow(a, b) {
   var c = 1;
@@ -18,7 +20,9 @@ var y = prompt("Введите степень, в которую нужно эт
 
 alert( x + " в степени " + y + " = " + pow(x, y) );
 
-var nameList = new Array();
+// ДЗ-2. Поиск в массиве.
+
+var nameList = [];
 var check;
 
 for (var j = 0; j < 5; j++) {
